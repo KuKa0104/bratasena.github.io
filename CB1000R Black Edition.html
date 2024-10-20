@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="foto foto/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Honda Motor</title>
+    <style>
+        .banner img{
+            width: 100%; /* biar gambar full */
+            display: block; /* biar gada space putih dibawah gambar */
+            height: 610px;
+        }
+
+        .page1{
+            width: 100%;
+            height: 550px;
+            background-color: rgb(215, 215, 215);
+            display: flex;
+        }
+
+        .page1 img{
+            margin: 75px 0 75px 75px;
+            
+        }
+
+        .page1 p{
+            margin: 92.5px 75px 75px 20px;
+        }
+
+        .page2{
+            background-color: rgb(28, 28, 28);
+            width: 100%;
+            height: auto;
+            display: flex; /* mengisi celah putih kosong antara page */
+            flex-direction: column; /* biar nge flexnya ga kepinggir tapi kebawah */
+         }
+
+         table {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            text-align: left;
+            width: 50%;
+            margin: 0 0 100px 315px;
+        }
+         td {
+            background-color: #ababab;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .tabs {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: sans-serif;
+            justify-content: center;
+        }
+
+        .tabs__label {
+            padding: 10px 16px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .tabs__radio {
+            display: none;
+        }
+
+        .tabs__content {
+            order: 1;
+            width: 100%;
+            line-height: 1.5;
+            font-size: 0.9em;
+            display: none;
+        }
+
+        .tabs__radio:checked + .tabs__label {
+            font-weight: bold;
+            color: #ffffff;
+            border-bottom: 2px solid #e61b33;
+        }
+
+        .tabs__radio + .tabs__label:hover {
+            background-color: #424242;
+        }
+
+        .tabs__radio:checked + .tabs__label + .tabs__content {
+            display: initial;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="foto foto/honda_logo.png" alt="Honda Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" id="home">HOME</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn" style="color: #e61b33;">PRODUCT</a>
+                    <div class="dropdown-content">
+                        <a href="Naked.html">Naked</a>
+                        <a href="Super Sport.html">Super Sport</a>
+                        <a href="Adventure.html">Adventure</a>
+                        <a href="Cruiser.html">Cruiser</a>
+                    </div>
+                  </li>
+
+                
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="containt">
+      <div class="banner">
+      <img src="foto foto/CB1000R Black Edition banner.jpg" alt="">
+      </div>
+      
+      <div class="page1">
+        <img src="foto foto/CB1000R Black Edition banner2.jpg" alt="">
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 16px;">Honda CB1000R Black Edition adalah perwujudan kesempurnaan dalam desain neo-sport café, menampilkan perpaduan elegan antara kekuatan dan gaya. Seluruh bodi motor dilapisi warna hitam pekat, menciptakan tampilan yang tajam dan eksklusif. Ditenagai oleh mesin 1000cc bertenaga, CB1000R Black Edition menawarkan akselerasi eksplosif dengan kontrol presisi yang tak tertandingi. Desain minimalis dengan garis tegas dan komponen premium memberikan kesan agresif namun tetap sophisticated, cocok untuk pengendara yang menginginkan performa maksimal dengan tampilan berkelas.
+        <br><br>Tidak hanya dari segi performa, CB1000R Black Edition juga dilengkapi dengan teknologi mutakhir seperti throttle by wire, berbagai mode berkendara, dan quick shifter yang memungkinkan perpindahan gigi lebih cepat. Suspensi Showa yang dapat diatur dan sistem pengereman canggih memberikan kenyamanan dan stabilitas dalam berbagai kondisi jalan. Motor ini adalah pilihan ideal bagi mereka yang mendambakan pengalaman berkendara yang eksklusif, bertenaga, dan penuh gaya, menjadikan setiap perjalanan sebagai pernyataan kehadiran di jalan raya.</p>
+      </div>
+
+    <div class="page2">
+        <h1 style="justify-content: center; text-align: center; color: white;">Spesifikasi Detail</h1>
+        <div class="tabs">
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+<label for="tab1" class="tabs__label">Engine</label>
+<div class="tabs__content">
+    <table border="1px" style="border-collapse: collapse;">
+        <tr>
+            <td>Engine Type</td>
+            <td>4-stroke, DOHC Inline-4 Cylinder</td>
+        </tr>
+        <tr>
+            <td>Engine Displacement</td>
+            <td>998cc</td>
+        </tr>
+        <tr>
+            <td>Bore X Stroke</td>
+            <td>75 x 56,5 mm</td>
+        </tr>
+        <tr>
+            <td>Max. Power</td>
+            <td>107 kW / 10.500 rpm</td>
+        </tr>
+        <tr>
+            <td>Max. Torque</td>
+            <td>104 Nm / 8.250 rpm</td>
+        </tr>
+        <tr>
+            <td>Compression Ratio</td>
+            <td>11,6 : 1</td>
+        </tr>
+        <tr>
+            <td>Fuel Capacity</td>
+            <td>16,2 L</td>
+        </tr>
+        <tr>
+            <td>Fuel Supply System</td>
+            <td>PGM-FI</td>
+        </tr>
+        <tr>
+            <td>Starter</td>
+            <td>Electric</td>
+        </tr>
+        <tr>
+            <td>Clutch Type</td>
+            <td>Wet, multiplate clutch</td>
+        </tr>
+        <tr>
+            <td>Oil Capacity</td>
+            <td>3,4 L (periodic exchange)</td>
+        </tr>
+    </table>
+</div>
+
+<input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+<label for="tab2" class="tabs__label">Chassis</label>
+<div class="tabs__content">
+    <table border="1px" style="border-collapse: collapse;">
+        <tr>
+            <td>Frame Type</td>
+            <td>Steel Mono Backbone</td>
+        </tr>
+        <tr>
+            <td>Front Suspension Type</td>
+            <td>Showa SFF-BP (Separate Function Front Fork – Big Piston)</td>
+        </tr>
+        <tr>
+            <td>Rear Suspension Type</td>
+            <td>Monoshock with preload adjustment</td>
+        </tr>
+        <tr>
+            <td>Front Brake Type</td>
+            <td>310 mm Dual Disc with Radial-mount 4-piston Caliper</td>
+        </tr>
+        <tr>
+            <td>Rear Brake Type</td>
+            <td>256 mm Disc with Single-piston Caliper</td>
+        </tr>
+        <tr>
+            <td>Front Tire Size</td>
+            <td>120/70ZR-17M/C</td>
+        </tr>
+        <tr>
+            <td>Rear Tire Size</td>
+            <td>190/55ZR-17M/C</td>
+        </tr>
+    </table>
+</div>
+
+<input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+<label for="tab3" class="tabs__label">Drive Train</label>
+<div class="tabs__content">
+    <table border="1px" style="border-collapse: collapse;">
+        <tr>
+            <td>Transmission</td>
+            <td>Manual, 6-speed</td>
+        </tr>
+        <tr>
+            <td>Gear Shift Pattern</td>
+            <td>1 - N - 2 - 3 - 4 - 5 - 6</td>
+        </tr>
+        <tr>
+            <td>Final Drive</td>
+            <td>Chain</td>
+        </tr>
+    </table>
+</div>
+
+<input type="radio" class="tabs__radio" name="tabs-example" id="tab4">
+<label for="tab4" class="tabs__label">Dimension</label>
+<div class="tabs__content">
+    <table border="1px" style="border-collapse: collapse;">
+        <tr>
+            <td>Overall (L X W X H)</td>
+            <td>2.120 x 789 x 1.090 mm</td>
+        </tr>
+        <tr>
+            <td>Wheelbase</td>
+            <td>1.455 mm</td>
+        </tr>
+        <tr>
+            <td>Ground Clearance</td>
+            <td>135 mm</td>
+        </tr>
+        <tr>
+            <td>Seat Height</td>
+            <td>830 mm</td>
+        </tr>
+        <tr>
+            <td>Curb Weight</td>
+            <td>213 kg</td>
+        </tr>
+    </table>
+</div>
+
+<input type="radio" class="tabs__radio" name="tabs-example" id="tab5">
+<label for="tab5" class="tabs__label">Electrical</label>
+<div class="tabs__content">
+    <table border="1px" style="border-collapse: collapse;">
+        <tr>
+            <td>Headlight</td>
+            <td>LED</td>
+        </tr>
+        <tr>
+            <td>Battery Capacity</td>
+            <td>12V-8.6Ah</td>
+        </tr>
+        <tr>
+            <td>Security</td>
+            <td>Smart Key System</td>
+        </tr>
+        <tr>
+            <td>Ignition Type</td>
+            <td>Full Transistorized, Battery</td>
+        </tr>
+        <tr>
+            <td>Spark Plug Type</td>
+            <td>NGK IMR9E-9HES</td>
+        </tr>
+    </table>
+</div>
+
+</div>
+</div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#">Matic</a></li>
+              <li><a href="#">Sport</a></li>
+              <li><a href="#">Cub</a></li>
+              <li><a href="#">BigBike</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Jl. Laksda Yos Sudarso, Jakarta, Indonesia</p>
+            <p>Email: info@astra-honda.com</p>
+            <p>Phone: +62 21 1234 5678</p>
+            <div class="social-media">
+              <a href="#"><img src="foto foto/facebook-icon.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com/welovehonda_id/"><img src="foto foto/instagram-icon.png" alt="Instagram"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Astra Honda Motor. All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

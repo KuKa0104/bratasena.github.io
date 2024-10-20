@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="foto foto/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Honda Motor</title>
+    <style>
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    padding: 20px; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    border: none;
+    padding: 1px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #e61b33;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #aaaaaa;
+}
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="foto foto/honda_logo.png" alt="Honda Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" id="home">HOME</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn" style="color: #e61b33;">PRODUCT</a>
+                    <div class="dropdown-content">
+                        <a href="Naked.html">Naked</a>
+                        <a href="Super Sport.html">Super Sport</a>
+                        <a href="Adventure.html">Adventure</a>
+                        <a href="Cruiser.html">Cruiser</a>
+                    </div>
+                  </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h2 style="font-size: xx-large; text-align: center;">Cruiser</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="foto foto/Rebel 1100.png" alt="BeAT">
+            <h2>Rebel 1100</h2>
+            <a href="Rebel 1100.html"><button>Selengkapnya</button></a>
+            </div>
+
+            <div class="card">
+                <img src="foto foto/Rebel 500.png" alt="BeAT">
+            <h2>Rebel 500</h2>
+            <a href="Rebel 500.html"><button>Selengkapnya</button></a>
+            </div>
+
+            <div class="card">
+                <img src="foto foto/Gold Wing 1800.png" alt="BeAT">
+            <h2>Gold Wing 1800</h2>
+            <a href="Gold Wing 1800.html"><button>Selengkapnya</button></a>
+            </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
